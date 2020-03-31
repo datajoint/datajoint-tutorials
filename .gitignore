@@ -9,3 +9,4 @@ dj_local_conf.json
 .idea/
 
 julia/setup.jl
+debug.log
