@@ -1,0 +1,4 @@
+datajoint
+matplotlib==3.1.3
+seaborn
+scikit-image
