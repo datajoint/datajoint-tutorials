@@ -1,8 +1,12 @@
 import datajoint as dj
 import numpy as np
+import pathlib
 
 # import the mouse-session schema
 from tutorial_pipeline.mouse_session import schema, Mouse, Session
+
+ephys_data_dir = pathlib.Path(__file__).parent.parent
+ephys_data_dir = ephys_data_dir / 'electrophysiology' / 'data'
 
 
 # Table definitions
@@ -18,7 +22,7 @@ class Neuron(dj.Imported):
 
     def make(self, key):
         # use key dictionary to determine the data file path
-        data_file = "data/data_{mouse_id}_{session_date}.npy".format(**key)
+        data_file = ephys_data_dir / "data_{mouse_id}_{session_date}.npy".format(**key)
 
         # load the data
         data = np.load(data_file)
