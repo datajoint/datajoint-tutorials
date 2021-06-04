@@ -401,7 +401,7 @@ female_mice
 
 # ### Restriction one table with another
 
-# All mice that has a session
+# All mice that have a session
 
 Mouse & Session 
 
@@ -434,7 +434,7 @@ Mouse - Session
 
 # Behavior of join:
 #
-# 1. match the common field(s) of the primary keys in the two tables
+# 1. match the primary keys of common field(s)in the two tables
 # 2. do a combination of the non-matched part of the primary key
 # 3. listing out the secondary attributes for each combination
 # 4. if two tables have secondary attributes that share a same name, it will throw an error. To join, we need to rename that attribute for at least one of the tables.
