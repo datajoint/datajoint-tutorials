@@ -381,7 +381,7 @@ Mouse & 'sex != "M"'
 
 # You can easily combine multiple restrictions to narrow down the entities based on multiple attributes.
 
-# Let's find all mouse that **is not male** AND **born after 2017-01-01**.
+# Let's find all mice that **are not male** AND **born after 2017-01-01**.
 
 Mouse & 'sex != "M"' & 'dob > "2017-01-01"'
 
