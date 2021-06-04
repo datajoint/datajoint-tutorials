@@ -15,8 +15,6 @@
 
 # # Working with automated computations: Imported tables
 
-print('go')
-
 # Welcome back! In this session, we are going to continue working with the pipeline for the mouse electrophysiology example. 
 #
 # In this session, we will learn to:
@@ -70,7 +68,7 @@ keys
 
 # Any item in this list of keys can be used to uniquely identify a single session!
 
-# ENTER YOUR CODE! - restrict session by an element of keys
+# ENTER YOUR CODE! - restrict session using keys and any element inside keys. 
 
 
 # Let's take the first key, and generate the file name that corresponds to this session. Remember the `data_{mouse_id}_{session_date}.npy` filename convetion!
