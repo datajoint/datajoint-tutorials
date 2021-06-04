@@ -47,7 +47,7 @@ import datajoint as dj
 # Let's build a pipeline to collect, store and process data and analysis for our hypothetical single electrode recording or calcium imaging recording in mice. To help us understand the project better, here is a brief description:
 
 # > * Your lab houses many mice, and each mouse is identified by a unique ID. You also want to keep track of information about each mouse such as their date of birth, and gender.
-# > * As a hard working neuroscientist, you perform experiments every day, sometimes working with more than one mouse in a day! However, on an any given day, a mouse undergoes at most one recording session.
+# > * As a hard working neuroscientist, you perform experiments every day, sometimes working with more than one mouse in a day! However, on any given day, a mouse undergoes at most one recording session.
 # > * For each experimental session, you would like to record what mouse you worked with and when you performed the experiment. You would also like to keep track of other helpful information such as the experimental setup you worked on.  
 #
 # > * In a session of electrophysiology
