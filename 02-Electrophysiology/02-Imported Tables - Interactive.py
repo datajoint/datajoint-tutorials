@@ -15,7 +15,7 @@
 
 # # Working with automated computations: Imported tables
 
-# Welcome back! In this session, we are going to continue working with the pipeline for the mouse electrophysiology example. 
+# Welcome back! In this session, we are going to continue working with the pipeline for the mouse electrophysiology example.
 #
 # In this session, we will learn to:
 #
@@ -57,7 +57,7 @@ Session()
 #
 # So `data_100_2017-05-25.npy` is the data for session identified by `mouse_id = 100` and `session_date = "2017-05-25"`.
 
-# ## Looking at the data 
+# ## Looking at the data
 
 # Let's take a quick peak at the data file content.
 
@@ -68,7 +68,7 @@ keys
 
 # Any item in this list of keys can be used to uniquely identify a single session!
 
-# ENTER YOUR CODE! - restrict session using keys and any element inside keys. 
+# ENTER YOUR CODE! - restrict session using keys and any element inside keys.
 
 
 # Let's take the first key, and generate the file name that corresponds to this session. Remember the `data_{mouse_id}_{session_date}.npy` filename convetion!
@@ -113,7 +113,7 @@ class Neuron(dj.Imported):
 
 # Let's check the state of our pipeline.
 
-# ENTER YOUR CODE! - plot ERD of the schema
+# ENTER YOUR CODE! - plot a Diagram of the schema
 
 
 # We defined `activity` as a `longblob` so that it can store a NumPy array holding the electric activity over time. This NumPy array will be imported from the file corresponding to each neuron.
@@ -122,13 +122,13 @@ class Neuron(dj.Imported):
 
 # ## DataJoint table tiers
 
-# In DataJoint, the tier of the table indicates **the nature of the data and the data source for the table**. So far we have encountered two table tiers: `Manual` and `Imported`, and we will encounter the two other major tiers in this session. 
+# In DataJoint, the tier of the table indicates **the nature of the data and the data source for the table**. So far we have encountered two table tiers: `Manual` and `Imported`, and we will encounter the two other major tiers in this session.
 #
-# DataJoint tables in `Manual` tier, or simply **Manual tables** indicate that its contents are **manually** entered by either experimenters or a recording system, and its content **do not depend on external data files or other tables**. This is the most basic table type you will encounter, especially as the tables at the beggining of the pipeline. In the ERD, `Manual` tables are depicted by green rectangles.
+# DataJoint tables in `Manual` tier, or simply **Manual tables** indicate that its contents are **manually** entered by either experimenters or a recording system, and its content **do not depend on external data files or other tables**. This is the most basic table type you will encounter, especially as the tables at the beggining of the pipeline. In the Diagram, `Manual` tables are depicted by green rectangles.
 #
-# On the other hand, **Imported tables** are understood to pull data (or *import* data) from external data files, and come equipped with functionalities to perform this importing process automatically, as we will see shortly! In the ERD, `Imported` tables are depicted by blue ellipses.
+# On the other hand, **Imported tables** are understood to pull data (or *import* data) from external data files, and come equipped with functionalities to perform this importing process automatically, as we will see shortly! In the Diagram, `Imported` tables are depicted by blue ellipses.
 
-dj.ERD(schema)
+dj.Diagram(schema)
 
 # ## Importing data into the `Imported` table
 
@@ -188,11 +188,11 @@ class Neuron(dj.Imported):
 
         # load the data
         data = np.load(data_file)
-        
+
         for idx, d in enumerate(data):
             # add the index of the 1st dimension as neuron_id
             key['neuron_id'] = idx
-            
+
             # add the loaded data as the "activity" column
             key['activity'] = d
 
@@ -210,7 +210,7 @@ Neuron.populate()
 
 Neuron()
 
-# As you can obviously see, in these example datasets, we only have data for one neuron per session. 
+# As you can obviously see, in these example datasets, we only have data for one neuron per session.
 
 # What happens if we call `Neuron.populate` again?
 
@@ -240,7 +240,7 @@ Neuron()
 
 # Congratulations! You have successfully extended your pipeline with a table to represent recorded data (`Neuron` as `Imported` table), learned and implemented the `make()` and `populate()` call to load external data to your tables.
 
-dj.ERD(schema)
+dj.Diagram(schema)
 
 # At this point, our pipeline contains the core elements with data populated, ready for further downstream analysis.
 #
