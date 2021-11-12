@@ -556,7 +556,7 @@ Mouse.delete()
 # In the next session, we are going to extend our data pipeline with tables to represent **imported data** and define new tables to **compute and hold analysis results**.
 #
 # We will use both ephys and calcium imaging as example pipelines:
-# + [02-electrophysiology](./electrophysiology/02-Imported%20Tables%20-%20Interactive.ipynb)
-# + [02-calcium imaging](./calcium_imaging/02-Imported%20Tables%20-%20Interactive.ipynb)
+# + [02-calcium imaging](.../01-Calcium_Imaging/02-Imported%20Tables%20-%20Interactive.ipynb)
+# + [02-electrophysiology](../02-Electrophysiology/02-Imported%20Tables%20-%20Interactive.ipynb)
 
 
