@@ -37,8 +37,8 @@ import matplotlib.pyplot as plt
 
 # Similarly as before, to continue working with the tables we defined in the previous notebook, we can either redefine the classes for each table `Mouse`, `Session`, `Neuron` and populate them. Or, again for your convenience, we can import them from the `tutorial_pipeline.ephys_cell_activity` module.
 
-import sys
-sys.path.append("..")
+import os
+if os.path.basename(os.getcwd())!='notebooks': os.chdir('/home/notebooks')
 from tutorial_pipeline.ephys_cell_activity import schema, Mouse, Session, Neuron
 
 Session()
