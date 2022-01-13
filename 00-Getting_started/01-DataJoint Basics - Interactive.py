@@ -42,13 +42,13 @@ import datajoint as dj
 #
 # Let's go ahead and build together a pipeline from scratch to better understand what a data pipeline is all about.
 
-# # Building our first pipeline: 
+# # Building our first pipeline:
 
 # Let's build a pipeline to collect, store and process data and analysis for our hypothetical single electrode recording or calcium imaging recording in mice. To help us understand the project better, here is a brief description:
 
 # > * Your lab houses many mice, and each mouse is identified by a unique ID. You also want to keep track of information about each mouse such as their date of birth, and gender.
 # > * As a hard working neuroscientist, you perform experiments every day, sometimes working with more than one mouse in a day! However, on any given day, a mouse undergoes at most one recording session.
-# > * For each experimental session, you would like to record what mouse you worked with and when you performed the experiment. You would also like to keep track of other helpful information such as the experimental setup you worked on.  
+# > * For each experimental session, you would like to record what mouse you worked with and when you performed the experiment. You would also like to keep track of other helpful information such as the experimental setup you worked on.
 #
 # > * In a session of electrophysiology
 # >> * you record electrical activity from a single neuron. You use recording equipment that produces separate data files for each neuron you recorded.
@@ -64,7 +64,7 @@ import datajoint as dj
 
 # > * Your lab houses many **mice**, and each mouse is identified by a unique ID. You also want to keep track of information about each mouse such as their date of birth, and gender.
 # > * As a hard working neuroscientist, you perform experiments every day, sometimes working with more than one mouse in a day! However, on an any given day, a mouse undergoes at most one recording session.
-# > * For each **experimental session**, you would like to record what mouse you worked with and when you performed the experiment. You would also like to keep track of other helpful information such as the experimental setup you worked on.  
+# > * For each **experimental session**, you would like to record what mouse you worked with and when you performed the experiment. You would also like to keep track of other helpful information such as the experimental setup you worked on.
 #
 # > * In a session of electrophysiology
 # >> * you record electrical activity from a **single neuron**. You use recording equipment that produces separate data files for each neuron you recorded.
@@ -92,7 +92,7 @@ import datajoint as dj
 
 # In the current notebook, we will design the tables for mouse and experimental sessions, the rest of the pipeline will be designed in the subdirectory `electrophysiology` and `calcium_imaging`
 
-# In DataJoint data pipeline, we represent these **entities** as **tables**. Different *kinds* of entities become distinct tables, and each row of the table is a single example (instance) of the category of entity. 
+# In DataJoint data pipeline, we represent these **entities** as **tables**. Different *kinds* of entities become distinct tables, and each row of the table is a single example (instance) of the category of entity.
 #
 # For example, if we have a `Mouse` table, then each row in the mouse table represents a single mouse!
 
@@ -229,7 +229,7 @@ Mouse()
 
 # ## Create tables with dependencies
 
-# Congratulations! We have successfully created your first table! We are now ready to tackle and include other **entities** in the project into our data pipeline. 
+# Congratulations! We have successfully created your first table! We are now ready to tackle and include other **entities** in the project into our data pipeline.
 #
 # Let's now take a look at representing an **experimental session**.
 
@@ -245,11 +245,11 @@ Mouse()
 #
 # to uniquely identify a single experimental session.
 
-# Note that, to uniquely identify an experimental session (or simply a **session**), we need to know the mouse that the session was about. In other words, a session cannot existing without a corresponding mouse! 
+# Note that, to uniquely identify an experimental session (or simply a **session**), we need to know the mouse that the session was about. In other words, a session cannot existing without a corresponding mouse!
 #
-# With **mouse** already represented as a table in our pipeline, we say that the session **depends on** the mouse! We would graphically represent this in an **entity relationship diagram (ERD)** by drawing the line between two tables, with the one below (**session**) dependeing on the one above (**mouse**).
+# With **mouse** already represented as a table in our pipeline, we say that the session **depends on** the mouse! We could graphically represent this in an **entity relationship diagram (ERD)** by drawing the line between two tables, with the one below (**session**) dependeing on the one above (**mouse**).
 
-# Thus we will need both **mouse** and a new attribute **session_date** to uniquely identify a single session. 
+# Thus we will need both **mouse** and a new attribute **session_date** to uniquely identify a single session.
 #
 # Remember that a **mouse** is already uniquely identified by its primary key - **mouse_id**. In DataJoint, you can declare that **session** depends on the mouse, and DataJoint will automatically include the mouse's primary key (`mouse_id`) as part of the session's primary key, along side any additional attribute(s) you specificy.
 
@@ -266,9 +266,9 @@ class Session(dj.Manual):
     """
 
 
-# You can actually generate the entity relationship diagram (ERD) on the fly by calling `dj.ERD` with the schema object
+# You can actually generate something similar to an entity relationship diagram (ERD) on the fly by calling `dj.Diagram` with the schema object. Many of the symbols and features are the same as the ERD standard.
 
-dj.ERD(schema)
+dj.Diagram(schema)
 
 # Let's try inserting a few sessions manually.
 
@@ -397,17 +397,17 @@ female_mice
 # ENTER YOUR CODE
 
 
-# In computer science/math lingo, DataJoint operations are said to **satisfy closure property**. Practically speaking, this means that the result of a query can immediately be used in another query, allowing you to build more complex queries from simpler ones. 
+# In computer science/math lingo, DataJoint operations are said to **satisfy closure property**. Practically speaking, this means that the result of a query can immediately be used in another query, allowing you to build more complex queries from simpler ones.
 
 # ### Restriction one table with another
 
 # All mice that have a session
 
-Mouse & Session 
+Mouse & Session
 
 # ### Combining restrictions
 
-# All the above queries could be combined 
+# All the above queries could be combined
 
 # Male mice that had a session
 
@@ -452,7 +452,7 @@ Mouse * Session & 'experimenter = "Jacob Reimer"' & 'sex = "M"'
 Mouse * Session & 'session_date > "2017-05-19"'
 
 # ## Projection .proj(): focus on attributes of interest
-# Beside restriction (`&`) and join (`*`) operations, DataJoint offers another type of operation: projection (`.proj()`). Projection is used to select attributes (columns) from a table, to rename them, or to create new calculated attributes. 
+# Beside restriction (`&`) and join (`*`) operations, DataJoint offers another type of operation: projection (`.proj()`). Projection is used to select attributes (columns) from a table, to rename them, or to create new calculated attributes.
 
 # From the ***Mouse*** table, suppose we want to focus only on the `sex` attribute and ignore the others, this can be done as:
 
@@ -556,7 +556,7 @@ Mouse.delete()
 # In the next session, we are going to extend our data pipeline with tables to represent **imported data** and define new tables to **compute and hold analysis results**.
 #
 # We will use both ephys and calcium imaging as example pipelines:
-# + [02-electrophysiology](./electrophysiology/02-Imported%20Tables%20-%20Interactive.ipynb)
-# + [02-calcium imaging](./calcium_imaging/02-Imported%20Tables%20-%20Interactive.ipynb)
+# + [02-calcium imaging](.../01-Calcium_Imaging/02-Imported%20Tables%20-%20Interactive.ipynb)
+# + [02-electrophysiology](../02-Electrophysiology/02-Imported%20Tables%20-%20Interactive.ipynb)
 
 

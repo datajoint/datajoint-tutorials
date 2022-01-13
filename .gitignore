@@ -1,12 +1,14 @@
+# OSX and python intermediate files
 __pycache__/
 .DS_Store
 ~*
 *~
 *.pyc
 .ipynb_checkpoints/
-dj_local_conf.json
-
-.idea/
-
-julia/setup.jl
 debug.log
+
+# DataJoint and setup files
+dj_local_con*.json
+julia/setup.jl
+.idea/
+temp*
