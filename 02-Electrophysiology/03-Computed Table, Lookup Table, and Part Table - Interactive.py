@@ -15,7 +15,7 @@
 
 # # Working with automated computations: Computed tables
 
-# Welcome back! In this session, we are going to continue working with the pipeline for the mouse electrophysiology example. 
+# Welcome back! In this session, we are going to continue working with the pipeline for the mouse electrophysiology example.
 #
 # In this session, we will learn to:
 #
@@ -35,10 +35,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 # %matplotlib inline
 
-# Similarly as before, to continue working with the tables we defined in the previous notebook, we can either redefine the classes for each table `Mouse`, `Session`, `Neuron` and populate them. Or, again for your convenience, we can import them from the `tutorial_pipeline.ephys_cell_activity` module. 
+# Similarly as before, to continue working with the tables we defined in the previous notebook, we can either redefine the classes for each table `Mouse`, `Session`, `Neuron` and populate them. Or, again for your convenience, we can import them from the `tutorial_pipeline.ephys_cell_activity` module.
 
-import sys
-sys.path.append("..")
+import os
+if os.path.basename(os.getcwd())!='notebooks': os.chdir('/home/notebooks')
 from tutorial_pipeline.ephys_cell_activity import schema, Mouse, Session, Neuron
 
 Session()
@@ -49,7 +49,7 @@ Neuron()
 
 # # Computations in data pipeline
 
-# Now we have successfully imported all data we have into our pipeline, it's time for us to start analyzing them! 
+# Now we have successfully imported all data we have into our pipeline, it's time for us to start analyzing them!
 #
 # When you perform computations in the DataJoint data pipeline, you focus and design tables in terms of **what** is it that you are computing rather than the **how**. You should think in terms of the "things" that you are computing!
 
@@ -120,9 +120,9 @@ class ActivityStatistics(dj.Computed):
     """
 
 
-# Did you notice that we are now inheriting from `dj.Computed`?  `Computed` is yet another table tier that signifies that **the entries of this table are computed using data in other tables**. `Computed` tables are represented as red circles in the ERD.
+# Did you notice that we are now inheriting from `dj.Computed`?  `Computed` is yet another table tier that signifies that **the entries of this table are computed using data in other tables**. `Computed` tables are represented as red circles in the Diagram   .
 
-dj.ERD(schema)
+dj.Diagram (schema)
 
 
 # Just like the `Imported` tables, `Computed` tables make use of the same `make` and `populate` logic for defining new entries in the table. Let's go ahead and implement `make` method.
@@ -139,7 +139,7 @@ class ActivityStatistics(dj.Computed):
     stdev: float   # standard deviation of activity
     max: float     # maximum activity
     """
-    
+
     def make(self, key):
         activity = (Neuron() & key).fetch1('activity')    # fetch activity as NumPy array
 
@@ -198,7 +198,7 @@ plt.xlim([0, 300])
 threshold = 0.5
 
 # find activity above threshold
-above_thrs = (activity > threshold).astype(int)   
+above_thrs = (activity > threshold).astype(int)
 
 plt.plot(activity)
 plt.plot(above_thrs)
@@ -232,7 +232,7 @@ count
 threshold =     # enter different threshold values here
 
 # find activity above threshold
-above_thrs = (activity > threshold).astype(int) 
+above_thrs = (activity > threshold).astype(int)
 
 rising = (np.diff(above_thrs) > 0).astype(int)   # find rising edge of crossing threshold
 spikes = np.hstack((0, rising))    # prepend 0 to account for shortening due to np.diff
@@ -255,7 +255,7 @@ plt.title('Total spike counts: {}'.format(count));
 
 # ## Parameter `Lookup` table
 
-# Let's define `SpikeDetectionParam` table to hold different parameter configuration for our spike detection algorithm. We are going to define this table as a `Lookup` table, rather than a `Manual` table. By now, you know that `Lookup` must be yet another **table tier** in DataJoint. `Lookup` tables are depicted by gray boxes in the ERD.
+# Let's define `SpikeDetectionParam` table to hold different parameter configuration for our spike detection algorithm. We are going to define this table as a `Lookup` table, rather than a `Manual` table. By now, you know that `Lookup` must be yet another **table tier** in DataJoint. `Lookup` tables are depicted by gray boxes in the Diagram .
 #
 # This tier indicates that the table will contain information:
 # * that will be referenced by other tables
@@ -270,7 +270,7 @@ class SpikeDetectionParam(dj.Lookup):
     """
 
 
-dj.ERD(schema)
+dj.Diagram (schema)
 
 
 # ### Defining `Spikes` table
@@ -292,7 +292,7 @@ class Spikes(dj.Computed):
 
 # ### Define the `Waveform` part table
 
-# We would also like to store the waveform at each detected spike, for a particular neuron. For simplicity, let's define the waveform to be 40 sample points before and after the onset of the detected spike. 
+# We would also like to store the waveform at each detected spike, for a particular neuron. For simplicity, let's define the waveform to be 40 sample points before and after the onset of the detected spike.
 # To accomplish this, we will define a `dj.Part` table `Waveform` which will contain the waveform per spike. The table definition is something like:
 
 @schema
@@ -304,7 +304,7 @@ class Spikes(dj.Computed):
     spikes: longblob     # detected spikes
     count: int           # total number of detected spikes
     """
-    
+
     class Waveform(dj.Part):
         definition = """
         -> master
@@ -316,10 +316,10 @@ class Spikes(dj.Computed):
 
 # The `-> master` syntax denotes that the `Waveform` part table is foreign key constrained by `Spike` table - i.e. the master table. The master table drives the ***populate*** logic, and the content of the part table is generally ingested together with the content of the master table, all in one step (i.e. one `make()` call).
 
-dj.ERD(schema)
+dj.Diagram (schema)
 
 
-# In the ERD, we see that `Spikes` is a computed table (red circle) that depends on **both Neuron and SpikeDetectionParam**. Finally, let's go ahead and implement the `make` method for the `Spikes` table. 
+# In the Diagram   , we see that `Spikes` is a computed table (red circle) that depends on **both Neuron and SpikeDetectionParam**. Finally, let's go ahead and implement the `make` method for the `Spikes` table.
 
 @schema
 class Spikes(dj.Computed):
@@ -330,7 +330,7 @@ class Spikes(dj.Computed):
     spikes: longblob     # detected spikes
     count: int           # total number of detected spikes
     """
-    
+
     class Waveform(dj.Part):
         definition = """
         -> master
@@ -338,7 +338,7 @@ class Spikes(dj.Computed):
         ---
         waveform: longblob  # waveform extracted from this spike
         """
-        
+
     def make(self, key):
         print('Populating for: ', key)
 
@@ -353,18 +353,18 @@ class Spikes(dj.Computed):
         print('Detected {} spikes!\n'.format(count))
 
         # create and insert a new dictionary containing `key` and additionally `spikes` and `count`
-        self.insert1(dict(key, spikes=spikes, count=count))  
-        
+        self.insert1(dict(key, spikes=spikes, count=count))
+
         # extract waveform for the `Waveform` part-table
         before_spk, after_spk = 40, 40  # extract 40 sample points before and after a spike as the waveform
         for spk_id, spk in enumerate(np.where(spikes==1)[0]):
-            
+
             # For simplicity, skip the spikes too close to the beginning or the end
-            if spk - before_spk < 0 or spk + after_spk > len(activity) + 1: 
+            if spk - before_spk < 0 or spk + after_spk > len(activity) + 1:
                 continue
-                
-            wf = activity[spk - before_spk: spk + after_spk] 
-            
+
+            wf = activity[spk - before_spk: spk + after_spk]
+
             # create and insert a new dictionary containing `key` and additionally `spike_id` and `waveform`
             self.Waveform.insert1(dict(key, spike_id=spk_id, waveform=wf))
 
@@ -449,6 +449,6 @@ Spikes()
 
 # Congratulations! You have successfully extended your pipeline with a table to represent recorded data (`Neuron` as `Imported` table), tables that performs and represents computation results (`ActivityStatistics` and `Spikes` as `Computed` tables) and a table to hold computation parameters (`SpikeDetectionParam` as `Lookup` table).
 
-dj.ERD(schema)
+dj.Diagram (schema)
 
 # Our pipeline is still fairly simple but completely capable of handling analysis!
