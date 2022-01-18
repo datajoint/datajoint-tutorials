@@ -1,3 +1,4 @@
+Cython
 pandas==0.25.3
 datajoint
 matplotlib==3.1.3
