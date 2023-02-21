@@ -1,2 +1,3 @@
-# playground_tutorial
+# DataJoint interactive tutorial
 Getting started materials for DataJoint - with Calcium Imaging, Electrophysiology, Machine Learning examples
+
