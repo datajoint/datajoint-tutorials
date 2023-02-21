@@ -3,7 +3,8 @@ FROM mcr.microsoft.com/devcontainers/python:3.7-bullseye
 
 RUN \
     apt update && \
-    apt-get install bash-completion graphviz default-mysql-client -y
+    apt-get install bash-completion graphviz default-mysql-client -y && \
+    pip install flake8 black faker ipykernel
 
 ENV DJ_HOST localhost
 ENV DJ_USER root
