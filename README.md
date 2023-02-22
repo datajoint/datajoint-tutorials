@@ -17,7 +17,7 @@ Interactive tutorials on the DataJoint framework, in python. Throughout this set
         - Retrieve primary key - `.fetch("KEY")`
         - Retrieve selective attributes
     - Delete operations
-- DataJoint Advanced
+- DataJoint advanced topics
     - `Imported` and `Computed` tables
     - `make()` function 
     - `.populate()` for automated computation
