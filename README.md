@@ -1,8 +1,8 @@
-# DataJoint interactive tutorial using GitHub Codespaces
+# DataJoint interactive tutorial with GitHub Codespace
 
 Interactive tutorials on the DataJoint framework, in python. Throughout this set of tutorials, you will learn
 
-- DataJoint basics
+- DataJoint basics (~1 hour)
     - Create schemas/tables
     - Table tiers (`Lookup`, `Manual`, `Imported`, `Computed`)
     - Insert entries and view entries in tables
@@ -17,7 +17,7 @@ Interactive tutorials on the DataJoint framework, in python. Throughout this set
         - Retrieve primary key - `.fetch("KEY")`
         - Retrieve selective attributes
     - Delete operations
-- DataJoint advanced topics
+- DataJoint advanced topics (~1 hour)
     - `Imported` and `Computed` tables
     - `make()` function 
     - `.populate()` for automated computation
