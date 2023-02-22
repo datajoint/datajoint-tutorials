@@ -4,7 +4,7 @@ import os
 from skimage import io
 
 # import the mouse-session schema
-from mouse_session import schema, Mouse, Session
+from .mouse_session import schema, Mouse, Session
 
 
 # Table definitions
