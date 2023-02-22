@@ -1,6 +1,32 @@
 # DataJoint interactive tutorial using GitHub Codespaces
 
-### This README is the guide to setting up an interactive tutorial on DataJoint basics using GitHub Codespaces. Please follow the steps below for the best experience:
+Interactive tutorials on the DataJoint framework, in python. Throughout this set of tutorials, you will learn
+
+- DataJoint basics
+    - Create schemas/tables
+    - Table tiers (`Lookup`, `Manual`, `Imported`, `Computed`)
+    - Insert entries and view entries in tables
+    - Table dependency and data integrity
+    - Query operations
+        - Restriction - `&`
+        - Join - `*`
+        - Projection - `.proj()`
+        - Aggregation - `.aggr()`
+    - Fetch operations
+        - Retrieve everything
+        - Retrieve primary key - `.fetch("KEY")`
+        - Retrieve selective attributes
+    - Delete operations
+- DataJoint Advanced
+    - `Imported` and `Computed` tables
+    - `make()` function 
+    - `.populate()` for automated computation
+    - `.populate(reserve_jobs=True)` for parallelization
+
+
+## Getting started
+
+The easiest way to start this interactive tutorial on DataJoint basics is to use [GitHub Codespace](https://docs.github.com/en/codespaces/overview). Please follow the steps below for the best experience:
 
 1. Fork this repository to your own GitHub account.
 
@@ -10,9 +36,11 @@
 
 4. If this is your first time using Codespaces with this repository, please click on the green `Create codespace on master` button.
 
-5. Wait for the environment to be created. This step takes ~ 5 minutes. You will know the environment is ready when a Visual Studio Code window is rendered within your browser. If you are new to Visual Studio Code, please take a minute to familiarize yourself with the layout. The directories you will need to navigate are on the left side of the screen by default.
+5. Wait for the environment to be created. This step takes ~5 minutes the very first time being launched, and typically around ~1 minute if you revisit this codespace again in the future. 
 
-6. Navigate to the 00-Getting_started directory and open the `00-Getting started.ipynb` Jupyter Notebook. Execute the cells in this notebook to being your walk through the tutorials.
+6. You will know the environment is ready when a Visual Studio Code window is rendered within your browser. If you are new to Visual Studio Code, please take a minute to familiarize yourself with the layout. The directories you will need to navigate are on the left side of the screen by default.
+
+7. Navigate to the 00-Getting_started directory and open the `00-Getting started.ipynb` Jupyter Notebook. Execute the cells in this notebook to being your walk through the tutorials.
 
 We recommend finishing all notebooks in `Getting_started` before proceeding to `Calcium_imaging` and `Electrophysiology`. Once you are done, GitHub will automatically terminate the Codespace after 30 minutes of inactivity or you can manually terminate the Codespace.
 
