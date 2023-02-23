@@ -48,5 +48,5 @@ If you are new to GitHub and run into any errors, please contact us via email. I
 
 **Please Note:** 
 
-```GitHub Codespaces are limited to 120 hours per month for free users. Once you exceed this limit, you will have to wait for the hours to reset or pay to use Codespaces.```
+```GitHub Codespaces are limited to 120 core hours per month for free users. Once you exceed this limit, you will have to wait for the hours to reset or pay to use Codespaces.```
 
