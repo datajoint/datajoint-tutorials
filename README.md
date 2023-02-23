@@ -44,7 +44,7 @@ The easiest way to start this interactive tutorial on DataJoint basics is to use
 
 We recommend finishing all notebooks in `00-Getting_started` before proceeding to `01-Calcium_imaging` and `02-Electrophysiology`. Once you are done, GitHub will automatically terminate the Codespace after 30 minutes of inactivity or you can manually terminate the Codespace.
 
-If you are new to GitHub and run into any errors, please contact us via email. If you are experienced with GitHub, please create an issue on the upstream repository or issue a pull request with a thorough explanantion of the error and proposed solution. 
+If you are new to GitHub and run into any errors, please contact us via email at support@datajoint.com. If you are experienced with GitHub, please create an issue on the upstream repository or issue a pull request with a thorough explanantion of the error and proposed solution. 
 
 **Please Note:** 
 
