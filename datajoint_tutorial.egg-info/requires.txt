@@ -1,3 +1,0 @@
-datajoint
-seaborn
-scikit-image

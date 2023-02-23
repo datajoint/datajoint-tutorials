@@ -1,11 +1,10 @@
 from setuptools import setup, find_packages
 from os import path
 
-pkg_name = 'tutorial_pipeline'
 here = path.abspath(path.dirname(__file__))
 
 long_description = """"
-DataJoint interactive tutorials with examples from electrophysiology, calcium-imaging
+DataJoint interactive tutorials with examples from electrophysiology and calcium-imaging
 """
 
 with open(path.join(here, 'requirements.txt')) as f:
