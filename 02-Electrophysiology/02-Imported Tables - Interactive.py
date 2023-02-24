@@ -34,8 +34,6 @@ import matplotlib.pyplot as plt
 
 # Now we would like to continue working with the tables we defined in the previous notebook. To do so, we would need the classes for each table: `Mouse` and `Session`. We can either redefine it here, but for your convenience, we have included the schema and table class definitions in a package called `tutorial_pipeline.mouse_session`, from which you can import the classes as well as the schema object. We will use the schema object again to define more tables.
 
-import os
-if os.path.basename(os.getcwd())!='notebooks': os.chdir('/home/notebooks')
 from tutorial_pipeline.mouse_session import schema, Mouse, Session
 
 Mouse()
@@ -76,7 +74,7 @@ keys
 key = keys[0]
 key
 
-filename = 'data/data_{mouse_id}_{session_date}.npy'.format(**key)
+filename = '../data/data_{mouse_id}_{session_date}.npy'.format(**key)
 filename
 
 # Here we have made use of Python's dictionary unpacking and `format` method on strings to generate the filename from the `key`.
@@ -184,7 +182,7 @@ class Neuron(dj.Imported):
     """
     def make(self, key):
         # use key dictionary to determine the data file path
-        data_file = "data/data_{mouse_id}_{session_date}.npy".format(**key)
+        data_file = "../data/data_{mouse_id}_{session_date}.npy".format(**key)
 
         # load the data
         data = np.load(data_file)

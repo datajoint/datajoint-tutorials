@@ -1,4 +1,5 @@
 import datajoint as dj
+from . import data_dir
 
 
 # fail-safe user name retrieval
@@ -49,25 +50,25 @@ session_data = [
   'experimenter': 'Edgar Y. Walker',
   'mouse_id': 0,
   'session_date': "2017-05-15",
-  'data_path': 'data'
+  'data_path': data_dir.as_posix()
  },
  {'experiment_setup': 0,
   'experimenter': 'Edgar Y. Walker',
   'mouse_id': 0,
   'session_date': "2017-05-19",
-  'data_path': 'data'
+  'data_path': data_dir.as_posix()
  },
  {'experiment_setup': 1,
   'experimenter': 'Fabian Sinz',
   'mouse_id': 5,
   'session_date': "2017-01-05",
-  'data_path': 'data'
+  'data_path': data_dir.as_posix()
  },
  {'experiment_setup': 100,
   'experimenter': 'Jacob Reimer',
   'mouse_id': 100,
   'session_date': "2017-05-25",
-  'data_path': 'data'
+  'data_path': data_dir.as_posix()
  }
 ]
 
