@@ -18,7 +18,7 @@ setup(
     author='DataJoint',
     author_email='info@datajoint.com',
     license='MIT',
-    url='https://github.com/datajoint-company/playground_tutorial',
+    url='https://github.com/datajoint/datajoint-tutorial',
     keywords='neuroscience datajoint',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=requirements,
