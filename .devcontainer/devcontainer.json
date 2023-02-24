@@ -1,6 +1,6 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 {
-	"name": "Development",
+	"name": "DataJoint Tutorial",
 	"dockerComposeFile": "docker-compose.yaml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -16,7 +16,11 @@
 		"ghcr.io/guiyomh/features/vim:0": {}
 	},
 	"onCreateCommand": "pip install -e .",
-	"postStartCommand": "MYSQL_VER=8.0 docker compose -f ./docker/docker-compose.yml down && MYSQL_VER=8.0 docker compose -f ./docker/docker-compose.yml up --build --wait",
+	"postStartCommand": "MYSQL_VER=8.0 docker compose down && MYSQL_VER=8.0 docker compose up --build --wait",
+	"hostRequirements": {
+		"cpus": 2,
+		"memory": "4gb"
+	},
 	"forwardPorts": [
 		3306
 	],

@@ -1,12 +1,7 @@
-# MYSQL_VER=5.7 docker compose -f ./docker/docker-compose.yml up --build
+# MYSQL_VER=8.0 docker compose up --build
 version: "2.4"
-x-net:
-  &net
-  networks:
-    - main
 services:
   db:
-    <<: *net
     image: datajoint/mysql:${MYSQL_VER}
     environment:
       - MYSQL_ROOT_PASSWORD=${DJ_PASS}
@@ -17,5 +12,3 @@ services:
       timeout: 30s
       retries: 5
       interval: 15s
-networks:
-  main:
