@@ -17,6 +17,9 @@
 	},
 	"onCreateCommand": "pip install -e .",
 	"postStartCommand": "MYSQL_VER=8.0 docker compose -f ./docker/docker-compose.yml down && MYSQL_VER=8.0 docker compose -f ./docker/docker-compose.yml up --build --wait",
+	"forwardPorts": [
+		3306
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [
