@@ -3,10 +3,8 @@ import numpy as np
 import pathlib
 
 # import the mouse-session schema
-from tutorial_pipeline.mouse_session import schema, Mouse, Session
-
-ephys_data_dir = pathlib.Path(__file__).parent.parent
-ephys_data_dir = ephys_data_dir / 'electrophysiology' / 'data'
+from . import data_dir as ephys_data_dir
+from .mouse_session import schema, Mouse, Session
 
 
 # Table definitions
