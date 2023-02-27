@@ -1,6 +1,6 @@
 # DataJoint interactive tutorial with GitHub Codespace
 
-Interactive tutorials on the DataJoint framework, in python. Throughout this set of tutorials, you will learn
+Interactive tutorials on the DataJoint framework, in Python. Throughout this set of tutorials, you will learn
 
 - DataJoint basics (~1 hour)
     - Create schemas/tables
