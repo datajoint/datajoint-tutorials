@@ -1,6 +1,6 @@
 # DataJoint interactive tutorial with GitHub Codespace
 
-Interactive tutorials on the DataJoint framework, in python. Throughout this set of tutorials, you will learn
+Interactive tutorials on the DataJoint framework, in Python. Throughout this set of tutorials, you will learn
 
 - DataJoint basics (~1 hour)
     - Create schemas/tables
@@ -40,7 +40,7 @@ The easiest way to start this interactive tutorial on DataJoint basics is to use
 
 6. You will know the environment is ready when a Visual Studio Code window is rendered within your browser. If you are new to Visual Studio Code, please take a minute to familiarize yourself with the layout. The directories you will need to navigate are on the left side of the screen by default.
 
-7. Navigate to the 00-Getting_started directory and open the `00-Getting started.ipynb` Jupyter Notebook. Execute the cells in this notebook to being your walk through the tutorials.
+7. Navigate to the 00-Getting_started directory and open the `00-Getting started.ipynb` Jupyter Notebook. Execute the cells in this notebook to begin your walk through the tutorials.
 
 We recommend finishing all notebooks in `00-Getting_started` before proceeding to `01-Calcium_imaging` and `02-Electrophysiology`. Once you are done, GitHub will automatically terminate the Codespace after 30 minutes of inactivity or you can manually terminate the Codespace.
 
