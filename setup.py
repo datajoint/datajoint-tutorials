@@ -11,14 +11,14 @@ with open(path.join(here, 'requirements.txt')) as f:
     requirements = f.read().splitlines()
 
 setup(
-    name='datajoint-tutorial',
+    name='datajoint-tutorials',
     version="0.1.0",
     description="DataJoint interactive tutorials",
     long_description=long_description,
     author='DataJoint',
     author_email='info@datajoint.com',
     license='MIT',
-    url='https://github.com/datajoint/datajoint-tutorial',
+    url='https://github.com/datajoint/datajoint-tutorials',
     keywords='neuroscience datajoint',
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     install_requires=requirements,
