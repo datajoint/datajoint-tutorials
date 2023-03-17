@@ -42,6 +42,15 @@ The easiest way to start this interactive tutorial on DataJoint basics is to use
 
 7. Navigate to the 00-Getting_started directory and open the `00-Getting started.ipynb` Jupyter Notebook. Execute the cells in this notebook to begin your walk through the tutorials.
 
+- **Local IDE**:
+  - Ensure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  - Ensure you have [Docker](https://docs.docker.com/get-docker/)
+  - Ensure you have [VSCode](https://code.visualstudio.com/)
+  - Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+  - `git clone` the codebase repository and open it in VSCode
+  - Use the `Dev Containers extension` to `Reopen in Container` (More info in the `Getting started` included with the extension)
+  - You will know your environment has finished loading once you see a terminal open related to `Running postStartCommand` with a final message: `Done`.
+
 We recommend finishing all notebooks in `00-Getting_started` before proceeding to `01-Calcium_imaging` and `02-Electrophysiology`. Once you are done, GitHub will automatically terminate the Codespace after 30 minutes of inactivity or you can manually terminate the Codespace.
 
 If you are new to GitHub and run into any errors, please contact us via email at support@datajoint.com. If you are experienced with GitHub, please create an issue on the upstream repository or issue a pull request with a thorough explanantion of the error and proposed solution. 
