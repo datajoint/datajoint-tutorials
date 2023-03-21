@@ -17,6 +17,7 @@ Interactive tutorials on the DataJoint framework, in Python. Throughout this set
         - Retrieve primary key - `.fetch("KEY")`
         - Retrieve selective attributes
     - Delete operations
+
 - DataJoint advanced topics (~1 hour)
     - `Imported` and `Computed` tables
     - `make()` function 
@@ -45,6 +46,20 @@ The easiest way to learn about the basics of DataJoint is to use these tutorial 
 
 + If you are new to GitHub and run into any errors, please contact us via email at support@datajoint.com. If you are experienced with GitHub, please create an issue on the upstream repository or issue a pull request with a thorough explanation of the error and proposed solution.
 
-**Please Note:**
++ **Please Note:** GitHub Codespaces are limited to 120 core-hours per month and 15 GB-month for free users. Once you exceed this limit, you will have to wait for the usage quota to reset or pay to use Codespaces.
 
-+ GitHub Codespaces are limited to 120 core-hours per month and 15 GB-month for free users. Once you exceed this limit, you will have to wait for the usage quota to reset or pay to use Codespaces.
+## Run in Local Development Environment
+
+- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+- Install [Docker](https://docs.docker.com/get-docker/)
+
+- Install [VSCode](https://code.visualstudio.com/)
+
+- Install the VSCode [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+- `git clone` the codebase repository and open it in VSCode
+
+- Use the `Dev Containers extension` to `Reopen in Container` (More info in the `Getting started` included with the extension.)
+
+- You will know your environment has finished loading once you see a terminal open related to `Running postStartCommand` with a final message: `Done`.
