@@ -2,6 +2,7 @@
 version: "2.4"
 services:
   db:
+    restart: always
     image: datajoint/mysql:${MYSQL_VER}
     environment:
       - MYSQL_ROOT_PASSWORD=${DJ_PASS}
@@ -9,6 +10,6 @@ services:
       - "3306:3306"
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
-      timeout: 30s
-      retries: 5
+      timeout: 15s
+      retries: 10
       interval: 15s
