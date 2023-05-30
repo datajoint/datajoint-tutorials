@@ -118,6 +118,7 @@ docker/standard_worker/.env
 
 # vscode
 .vscode/settings.json
+*.code-workspace
 
 # ssh
 *.ssh
