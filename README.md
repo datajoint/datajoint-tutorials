@@ -55,3 +55,12 @@ You will know your environment has finished loading once you either see a termin
 1. Once you are done, see the options available to you in the menu in the bottom-left corner. For example, in Codespace you will have an option to `Stop Current Codespace` but when running DevContainer on your own machine the equivalent option is `Reopen folder locally`. By default, GitHub will also automatically stop the Codespace after 30 minutes of inactivity.
 
 If you are new to GitHub and run into any errors, please contact us via email at support@datajoint.com. If you are experienced with GitHub, please create an issue on the upstream repository or if you'd like help contribute, feel free to create a pull request. Please include a thorough explanantion of the error and/or proposed solution.
+
+## Additional DataJoint Tutorials
+
+- DataJoint Elements are a collection of curated modules for assembling data pipelines for several modalities of neurophysiology experiments.
+  - [Element Calcium Imaging Tutorial](https://github.com/datajoint/element-calcium-imaging#interactive-tutorial)
+  - [Element Array Electrophysiology Tutorial](https://github.com/datajoint/workflow-array-ephys#interactive-tutorial)
+
+- [Machine Intelligence from Cortical Networks (MICrONS) program](https://www.microns-explorer.org/)
+  - [MICrONS Tutorial](https://github.com/datajoint/microns_phase3_nda#interactive-environment)
