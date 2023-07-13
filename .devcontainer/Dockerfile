@@ -1,4 +1,7 @@
-FROM python:3.7-slim@sha256:85ddc7b500c5e33a6eec44adbde8347a8a07714f03fc638f2cf4b13837bac601 
+FROM python:3.9-slim@sha256:5f0192a4f58a6ce99f732fe05e3b3d00f12ae62e183886bca3ebe3d202686c7f 
+
+ENV PATH /usr/local/bin:$PATH
+ENV PYTHON_VERSION 3.9.17
 
 RUN \
     adduser --system --disabled-password --shell /bin/bash vscode && \
@@ -22,7 +25,6 @@ RUN \
     pip install --no-cache-dir --upgrade black pip && \
     echo '. /etc/bash_completion' >> /home/vscode/.bashrc && \
     echo 'export PS1="\[\e[32;1m\]\u\[\e[m\]@\[\e[34;1m\]\H\[\e[m\]:\[\e[33;1m\]\w\[\e[m\]$ "' >> /home/vscode/.bashrc && \
-    # dircolors -b >> /home/vscode/.bashrc && \  # somehow fix colors
     apt-get clean
 COPY ./requirements.txt /tmp/
 RUN \

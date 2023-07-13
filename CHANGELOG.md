@@ -1,8 +1,14 @@
 # Changelog
 
+## 0.1.2 - 2023-07-13
+
++ Update - Pin versions for VS Code extensions
++ Update - Dev Container base Docker image - python:3.7-slim -> python:3.9-slim
++ Add - Environment variables to select local Python install over Linux distribution of Python
+
 ## 0.1.1 - 2023-06-19
 
-+ Add - Docker image hash
++ Add - Docker image ID
 
 ## 0.1.0 - 2023-02-27
 

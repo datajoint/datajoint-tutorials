@@ -12,7 +12,7 @@ with open(path.join(here, "requirements.txt")) as f:
 
 setup(
     name="datajoint-tutorials",
-    version="0.1.1",
+    version="0.1.2",
     description="DataJoint interactive tutorials",
     long_description=long_description,
     author="DataJoint",
