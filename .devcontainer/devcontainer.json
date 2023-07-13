@@ -22,7 +22,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python"
+				"ms-python.python@v2023.8.0",
+				"ms-toolsai.jupyter@v2023.3.1201040234"
 			]
 		}
 	}
