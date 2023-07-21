@@ -1,15 +1,14 @@
 # Welcome to DataJoint tutorials!
 
-DataJoint is an open-source software and cloud platform to design, build and automate data analysis, pipelines and data sharing for neuroscience experiments. 
+DataJoint is an open-source software to design, build and automate data analysis, pipelines and data sharing for neuroscience experiments and research labs. 
 
-This document will guide you as a new DataJoint user through interactive tutorials organized in notebooks and written in Python.
+This document will guide you as a new DataJoint user through interactive tutorials organized in [Jupyter notebooks](https://jupyter-notebook.readthedocs.io/en/stable/) and written in [Python](https://www.python.org/).
 
-*Please note that these hands-on tutorials are friendly to non-expert users and no prior programming knowledge is required.* 
-
+*Please note that these hands-on DataJoint tutorials are friendly to non-expert users and no prior programming knowledge is required.* 
 
 ## Key learnings from the tutorials
 
-After completing this set of tutorials, you will gain real experience in the basics of the DataJoint framework. These skills will allow you to design, implement and manage data workflows effectively applied to your scientific research.
+After completing this set of tutorials, you will gain real experience in the basics of the DataJoint framework. These skills will allow you to design, implement and manage data pipelines effectively applied to your scientific research.
 
 Here is a summary of the content that you can expect to have learned:
 
@@ -38,46 +37,40 @@ Here is a summary of the content that you can expect to have learned:
 
 ## Quick start
 
-The DataJoint tutorials are easily accessible using an **interactive environment** that contains all the software required to run the experiments. The environment is configured by [DevContainer] (https://containers.dev/). Here are two options to launch the interactive environment:
+### User installation 
+DataJoint tutorials are easily accessible using an **interactive environment** that contains all the software required to run the experiments. The environment is configured by [DevContainer] (https://containers.dev/). Here are two options to launch the interactive environment. 
 
-- **Cloud-based IDE: GitHub Codespaces**: (*recommended*) 
-   - This is the easiest option for **tutorial users**. You will immediately start coding using DataJoint and Python, with no installation of software or environments, using built-in tools in the cloud. 
+*Please note that to use the DataJoint Python package with an interactive environment you need a [GitHub](https://github.com/) account.*
+
+- **Cloud-based environment: GitHub Codespaces**: (*recommended*) 
+   - This is the easiest option for **tutorial users**. You will immediately start coding using DataJoint and Python, with no installation of software or local environments. Cloud-based environments (IDEs), such as [GitHub Codespaces](https://github.com/features/codespaces), use built-in tools directly connected to the cloud and work on the browser.
    
    - Instructions:
-      - A codespace is a development environment hosted in the cloud. To use the DataJoint tutorials with [GitHub Codespaces](https://github.com/features/codespaces), you need a [GitHub](https://github.com/) account. Fork the [datajoint-tutorials](https://github.com/datajoint/datajoint-tutorials) repository into your repository.
+      - Fork the [datajoint-tutorials](https://github.com/datajoint/datajoint-tutorials) repository into your repository.
       - From your `datajoint-tutorials` repository, click on `Code`, then click on `Codespaces` tab, and `+` option will `Create codespace on main` on your fork with default options. For more control, see the `...` where you may create `New with options...`.
       - The building time for a codespace is **~5m**. This is done infrequently and cached for convenience.
       - The start time for a codespace is **~30s**. This will pull the built codespace from the cache when you need it.
       - *Tip*: Each month, GitHub renews a [free-tier](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) quota of computing and storage. Typically we run into the storage limits before anything else since Codespaces consume storage while stopped. It is best to delete Codespaces when not actively in use and recreate them when needed. We'll soon be creating prebuilds to avoid larger build times. Once any portion of your quota is reached, you will need to wait for it to be reset at the end of your cycle or add billing info to your GitHub account to handle overages.
       - *Tip*: GitHub auto names the codespace but you can rename the codespace so that it is easier to identify later.
 
-- **Local IDE**:
-   - We highly recommend this option for users seeking to apply DataJoint for **their own neuroscience experiments** and lab research. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut).
+- **Local environment**:
+   - We highly recommend this option for users that after exploring the tutorials want to apply DataJoint for **their own neuroscience experiments** and lab research. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut). For this option, ensure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [Docker](https://docs.docker.com/get-docker/), [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/) and [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). For more detailed instructions, please check out the [User Guide in DataJoint Documentation](https://datajoint.com/docs/elements/user-guide/).
 
-   - Instructions:
-      - Ensure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-      - Ensure you have [Docker](https://docs.docker.com/get-docker/)
-      - Ensure you have [VSCode](https://code.visualstudio.com/)
-      - Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-      - `git clone` the codebase repository and open it in VSCode
-      - Use the `Dev Containers extension` to `Reopen in Container` (More info in the `Getting started` included with the extension)
-
-You will know your environment has finished loading once you see a terminal open related to `Running postStartCommand` with a final message: `Done` or the `README.md` is opened in `Preview`.
+Before we start, remember that all of the edits you make in these tutorial notebooks are ***not persistent*** - they will be reset to the original content every time you restart the server. However, you can easily download the notebooks that you are interested in keeping the changes.
 
 ### Instructions
+- To begin, we suggest navigating to the notebooks directory located in the left panel and proceeding through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
 
-1. We recommend you start by navigating to the `notebooks` directory on the left panel and go through the `00-Getting_Started/01-DataJoint Basics - Interactive.ipynb` Jupyter notebook. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
+- Once you are done, see the options available to you in the menu in the bottom-left corner. For example, in Codespace you will have the option to `Stop Current Codespace`, but when running DevContainer on your machine the equivalent option is `Reopen folder locally`. By default, GitHub will also automatically stop the Codespace after 30 minutes of inactivity.
 
-2. Once you are done, see the options available to you in the menu in the bottom-left corner. For example, in Codespace you will have the option to `Stop Current Codespace`, but when running DevContainer on your own machine the equivalent option is `Reopen folder locally`. By default, GitHub will also automatically stop the Codespace after 30 minutes of inactivity.
-
-If you are new to GitHub and run into any errors, please contact us via email at support@datajoint.com. If you are experienced with GitHub, please create an issue on the upstream repository or if you'd like help contribute, feel free to create a pull request. Please include a thorough explanation of the error and/or proposed solution.
+## Support
+If you need help getting started or run into any errors, please open a GitHub Issue or contact our team by email at support@datajoint.com.
 
 ## Additional DataJoint Tutorials
 
 - DataJoint Elements are a collection of curated modules for assembling data pipelines for several modalities of neurophysiology experiments.
   - [Element Calcium Imaging Tutorial](https://github.com/datajoint/element-calcium-imaging#interactive-tutorial)
   - [Element Array Electrophysiology Tutorial](https://github.com/datajoint/workflow-array-ephys#interactive-tutorial)
-  - [Element Miniscope Calcium Imaging Tutorial](https://github.com/datajoint/workflow-miniscope#interactive-tutorial)
 
 - [Machine Intelligence from Cortical Networks (MICrONS) program](https://www.microns-explorer.org/)
   - [MICrONS Tutorial](https://github.com/datajoint/microns_phase3_nda#interactive-environment)
