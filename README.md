@@ -1,10 +1,25 @@
 # Welcome to DataJoint tutorials!
 
-DataJoint is an open-source software to design, build and automate data analysis, pipelines and data sharing for neuroscience experiments and research labs. 
+DataJoint is an open-source tool library to design, build and automate data analysis, pipelines and data sharing for neuroscience experiments and research labs. 
 
 This document will guide you as a new DataJoint user through interactive tutorials organized in [Jupyter notebooks](https://jupyter-notebook.readthedocs.io/en/stable/) and written in [Python](https://www.python.org/).
 
-*Please note that these hands-on DataJoint tutorials are friendly to non-expert users and no prior programming knowledge is required.* 
+*Please note that these hands-on DataJoint tutorials are friendly to non-expert users and advanced programming skills are not required.* 
+
+## Table of contents
+- Notebooks: interactive notebooks to be a master of DataJoint. The Calcium Imaging and Electrophysiology tutorials serve as common examples of data structure and data analysis. In addition, some fill-in-the-blank sections are included for you to code yourself!
+    - 01-DataJoint Basics
+    - 02-Calcium Imaging Imported Tables
+    - 03-Calcium Imaging Computed Tables
+    - 04-Electrophysiology Imported Tables
+    - 05-Electrophysiology Computed Tables
+
+- Completed exercises: notebooks with the code sections completed and solved.
+
+- Pipeline
+    - ephys
+    - imaging
+    - mouse
 
 ## Key learnings from the tutorials
 
