@@ -16,10 +16,14 @@ This document will guide you as a new DataJoint user through interactive tutoria
 
 - Completed exercises: notebooks with the code sections completed and solved.
 
-- Pipeline
-    - ephys
-    - imaging
-    - mouse
+- Short tutorials:
+    - DataJoint in 30min
+    - University
+
+- Tutorial pipeline
+    - Ephys cell activity
+    - Imaging
+    - Mouse session
 
 ## Key learnings from the tutorials
 
