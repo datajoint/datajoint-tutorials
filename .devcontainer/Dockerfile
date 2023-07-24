@@ -19,7 +19,7 @@ RUN \
 RUN \
     # dev setup
     apt update && \
-    apt-get install sudo git bash-completion graphviz default-mysql-client -y && \
+    apt-get install sudo git gcc bash-completion graphviz default-mysql-client -y && \
     usermod -aG sudo vscode && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
     pip install --no-cache-dir --upgrade black pip && \
