@@ -73,7 +73,13 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
       - *Tip*: GitHub auto names the codespace but you can rename the codespace so that it is easier to identify later.
 
 - **Local environment**:
-   - We highly recommend this option for users that after exploring the tutorials want to apply DataJoint for **their own neuroscience experiments** and lab research. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut). For this option, ensure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [Docker](https://docs.docker.com/get-docker/), [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/) and [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). For more detailed instructions, please check out the [User Guide in DataJoint Documentation](https://datajoint.com/docs/elements/user-guide/).
+   - We highly recommend this option for users that after exploring the tutorials want to apply DataJoint for **their own neuroscience experiments** and lab research. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut). For this option, ensure you have:
+    - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+    - [Docker](https://docs.docker.com/get-docker/)
+    - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+    - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). 
+    
+    For more detailed instructions, please check out the [User Guide in DataJoint Documentation](https://datajoint.com/docs/elements/user-guide/).
 
 Before we start, remember that all of the edits you make in these tutorial notebooks are ***not persistent*** - they will be reset to the original content every time you restart the server. However, you can easily download the notebooks that you are interested in keeping the changes.
 
