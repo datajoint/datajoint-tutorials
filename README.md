@@ -42,7 +42,7 @@ Here is a summary of the content that you can expect to have learned:
         - Retrieve selective attributes
     - Delete operations
 
-- DataJoint advanced topics: workflow automation (~1 hour)
+- DataJoint advanced topics: pipeline automation (~1 hour)
     - `Imported` and `Computed` tables
     - `make()` function 
     - `.populate()` for automated computation
