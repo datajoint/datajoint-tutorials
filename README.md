@@ -6,7 +6,7 @@ This document will guide you as a new DataJoint user through interactive tutoria
 
 *Please note that these hands-on DataJoint tutorials are friendly to non-expert users, and advanced programming skills are not required.* 
 
-## Table of contents
+## Table of contents 
 - Notebooks: interactive notebooks to be a master of DataJoint. The Calcium Imaging and Electrophysiology tutorials are common examples of data structure and analysis. In addition, some fill-in-the-blank sections are included for you to code yourself!
     - 01-DataJoint Basics
     - 02-Calcium Imaging Imported Tables
