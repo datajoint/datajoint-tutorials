@@ -16,7 +16,7 @@ This document will guide you as a new DataJoint user through interactive tutoria
 
 - In the `completed_tutorials` folder are Jupyter notebooks with the code sections completed and solved.
 
-- Short tutorials:
+- You will find the following notebooks in the `short_tutorials` folder:
     - DataJoint in 30min
     - University
 
