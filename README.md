@@ -20,11 +20,6 @@ This document will guide you as a new DataJoint user through interactive tutoria
     - DataJoint in 30min
     - University
 
-- Tutorial pipeline
-    - Ephys cell activity
-    - Imaging
-    - Mouse session
-
 ## Key learnings from the tutorials
 
 After completing this set of tutorials, you will gain real experience in the basics of the DataJoint framework. These skills will allow you to design, implement and manage data pipelines effectively applied to your scientific research.
