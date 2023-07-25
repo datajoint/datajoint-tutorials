@@ -1,6 +1,6 @@
 # Welcome to DataJoint tutorials!
 
-DataJoint is an open-source tool library to design, build and automate data analysis, pipelines, and data sharing for neuroscience experiments and research labs. 
+DataJoint is an open-source library for science labs to design and build data pipelines for automated data analysis and sharing.
 
 This document will guide you as a new DataJoint user through interactive tutorials organized in [Jupyter notebooks](https://jupyter-notebook.readthedocs.io/en/stable/) and written in [Python](https://www.python.org/).
 
