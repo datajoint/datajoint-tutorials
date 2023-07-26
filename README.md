@@ -66,6 +66,8 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
       - The start time for Codespaces is **~30s**. This will pull the built codespace from the cache when you need it.
       - *Tip*: Each month, GitHub renews a [free-tier](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) quota of computing and storage. Typically we run into the storage limits before anything else since Codespaces consume storage while stopped. It is best to delete Codespaces when not actively in use and recreate them when needed. We'll soon be creating prebuilds to avoid larger build times. Once any portion of your quota is reached, you will need to wait for it to be reset at the end of your cycle or add billing info to your GitHub account to handle overages.
       - *Tip*: GitHub auto names the Codespaces, but you can rename the Codespaces so that it is easier to identify later.
+      - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
+      - Once you are done, see the options in the menu in the bottom-left corner. In Codespaces, you can `Stop Current Codespace`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
 
 - **Local environment**:
    - We highly recommend this option for users that who want to apply DataJoint to **their own neuroscience experiments** and lab research after exploring the tutorials. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut). For this option, ensure you have the following:
@@ -73,15 +75,12 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
     - [Docker](https://docs.docker.com/get-docker/)
     - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
     - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). 
-    
+    - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
+    - Once you are done, see the options in the menu in the bottom-left corner. When running DevContainer on your machine, you can `Reopen folder locally`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
+
     For more detailed instructions, please check out the [User Guide in DataJoint Documentation](https://datajoint.com/docs/elements/user-guide/).
 
 Before we start, remember that all the edits you make in these tutorial notebooks are ***not persistent*** - they will be reset to the original content every time you restart the server. However, you can easily download the notebooks that interest you in keeping the changes.
-
-### Instructions
-- To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
-
-- Once you are done, see the options in the menu in the bottom-left corner. For example, in Codespaces you can `Stop Current Codespace`, but when running DevContainer on your machine the equivalent option is `Reopen folder locally`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
 
 ## Support
 If you need help getting started or run into any errors, please open a GitHub Issue or contact our team by email at support@datajoint.com.
