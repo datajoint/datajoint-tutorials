@@ -31,16 +31,13 @@ Here is a summary of the content that you can expect to have learned:
     - Table tiers (`Lookup`, `Manual`, `Imported`, `Computed`)
     - Insert entries and view entries in tables
     - Table dependency and data integrity
-    - Query operations
+    - Basic operations
         - Restriction - `&`
         - Join - `*`
         - Projection - `.proj()`
-        - Aggregation - `.aggr()`
-    - Fetch operations
-        - Retrieve everything
-        - Retrieve primary key - `.fetch("KEY")`
-        - Retrieve selective attributes
-    - Delete operations
+        - Fetch - `.fetch()`
+        - Deletion - `.delete()`
+        - Drop - `.drop()`
 
 - DataJoint advanced topics: pipeline automation (~1 hour)
     - `Imported` and `Computed` tables
