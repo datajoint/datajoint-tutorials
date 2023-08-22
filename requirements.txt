@@ -1,3 +1,5 @@
 datajoint
 seaborn
 scikit-image
+ipython-sql
+sqlalchemy
