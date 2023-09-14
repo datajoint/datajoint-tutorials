@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3 - 2023-09-14
+
++ Add - GitHub Actions to build Dev Container
++ Update - Dockerfile to install repository
+
 ## 0.1.2 - 2023-07-13
 
 + Update - Pin versions for VS Code extensions
