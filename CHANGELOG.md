@@ -3,7 +3,6 @@
 ## 0.1.3 - 2023-09-14
 
 + Add - GitHub Actions to build Docker image and push to DockerHub
-+ Update - Dockerfile to install repository
 
 ## 0.1.2 - 2023-07-13
 
