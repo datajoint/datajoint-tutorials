@@ -26,12 +26,15 @@ RUN \
     echo '. /etc/bash_completion' >> /home/vscode/.bashrc && \
     echo 'export PS1="\[\e[32;1m\]\u\[\e[m\]@\[\e[34;1m\]\H\[\e[m\]:\[\e[33;1m\]\w\[\e[m\]$ "' >> /home/vscode/.bashrc && \
     apt-get clean
-COPY ./requirements.txt /tmp/
+
+COPY ./ /tmp/datajoint-tutorials
+
 RUN \
     # tutorial dependencies
     pip install --no-cache-dir black faker ipykernel && \
-    pip install --no-cache-dir -r /tmp/requirements.txt && \
-    rm /tmp/requirements.txt
+    pip install --no-cache-dir -e /tmp/datajoint-tutorials && \
+    # clean up
+    rm -rf /tmp/datajoint-tutorials
 
 ENV DJ_HOST fakeservices.datajoint.io
 ENV DJ_USER root
