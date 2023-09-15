@@ -41,6 +41,10 @@ Here are some options that provide a great experience:
 - **Local IDE**:
   - Ensure you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
   - Ensure you have [Docker](https://docs.docker.com/get-docker/)
+    - On M1/M2 Mac, you have to:
+      - enable Rosetta 2 on Docker advanced/experimental settings
+      - ensure Rosetta is installed by typing `softwareupdate --install-rosetta` at a shell prompt
+      - `export DOCKER_DEFAULT_PLATFORM=linux/amd64` in .zshrc or at a shell prompt
   - Ensure you have [VSCode](https://code.visualstudio.com/)
   - Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
   - `git clone` the codebase repository and open it in VSCode
