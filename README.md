@@ -70,8 +70,13 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
    - We highly recommend this option for users that who want to apply DataJoint to **their own neuroscience experiments** and lab research after exploring the tutorials. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut). For this option, ensure you have the following:
     - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     - [Docker](https://docs.docker.com/get-docker/)
+      - On M1/M2 Mac, you have to:
+        - enable Rosetta 2 on Docker advanced/experimental settings
+        - ensure Rosetta is installed by typing `softwareupdate --install-rosetta` at a shell prompt
+        - `export DOCKER_DEFAULT_PLATFORM=linux/amd64` in .zshrc or at a shell prompt
     - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
-    - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). 
+    - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+    - `git clone` the codebase repository and open it in VSCode.
     - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
     - Once you are done, see the options in the menu in the bottom-left corner. When running DevContainer on your machine, you can `Reopen folder locally`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
 
