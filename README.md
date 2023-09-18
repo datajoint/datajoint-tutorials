@@ -80,7 +80,9 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
     - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
     - Once you are done, see the options in the menu in the bottom-left corner. When running DevContainer on your machine, you can `Reopen folder locally`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
 
-    For more detailed instructions, please check out the [User Guide in DataJoint Documentation](https://datajoint.com/docs/elements/user-guide/).
+## Documentation
+
+- For more information on DataJoint Python, please refer to the [documentation](https://datajoint.com/docs/core/datajoint-python/).
 
 Before we start, remember that all the edits you make in these tutorial notebooks are ***not persistent*** - they will be reset to the original content every time you restart the server. However, you can easily download the notebooks that interest you in keeping the changes.
 
