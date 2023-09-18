@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132pt" height="176pt" viewBox="0.00 0.00 131.50 176.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 172)">
+<title>%3</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-172 127.5,-172 127.5,4 -4,4"/>
+<!-- Analysis -->
+<g id="node1" class="node">
+<title>Analysis</title>
+<g id="a_node1"><a xlink:title="→ Session→ Param------------------------------result               ">
+<ellipse fill="#ff0000" fill-opacity="0.125490" stroke="#ff0000" stroke-opacity="0.125490" cx="57.5" cy="-13" rx="13" ry="13"/>
+<text text-anchor="middle" x="57.5" y="-9.9" font-family="arial" font-size="12.00" fill="#7f0000" fill-opacity="0.627451">Analysis</text>
+</a>
+</g>
+</g>
+<!-- Param -->
+<g id="node2" class="node">
+<title>Param</title>
+<g id="a_node2"><a xlink:title="param_id             ------------------------------multiplier           ">
+<polygon fill="#000000" fill-opacity="0.125490" stroke="transparent" points="45,-97 0,-97 0,-62 45,-62 45,-97"/>
+<text text-anchor="start" x="8" y="-78" font-family="arial" text-decoration="underline" font-size="10.00">Param</text>
+</a>
+</g>
+</g>
+<!-- Param&#45;&gt;Analysis -->
+<g id="edge1" class="edge">
+<title>Param-&gt;Analysis</title>
+<path fill="none" stroke="#000000" stroke-width="0.75" stroke-opacity="0.250980" d="M31.51,-61.89C37.83,-50.24 46.1,-35.01 51.59,-24.88"/>
+</g>
+<!-- Subject -->
+<g id="node3" class="node">
+<title>Subject</title>
+<g id="a_node3"><a xlink:title="subject_name         ------------------------------sex                  ">
+<polygon fill="#00ff00" fill-opacity="0.188235" stroke="#00ff00" stroke-opacity="0.188235" points="122,-168 65,-168 65,-133 122,-133 122,-168"/>
+<text text-anchor="start" x="73" y="-148.4" font-family="arial" text-decoration="underline" font-size="12.00" fill="darkgreen">Subject</text>
+</a>
+</g>
+</g>
+<!-- Session -->
+<g id="node4" class="node">
+<title>Session</title>
+<g id="a_node4"><a xlink:title="→ Subjectsession_id           ">
+<polygon fill="#00ff00" fill-opacity="0.188235" stroke="#00ff00" stroke-opacity="0.188235" points="123.5,-97 63.5,-97 63.5,-62 123.5,-62 123.5,-97"/>
+<text text-anchor="start" x="71.5" y="-77.4" font-family="arial" text-decoration="underline" font-size="12.00" fill="darkgreen">Session</text>
+</a>
+</g>
+</g>
+<!-- Subject&#45;&gt;Session -->
+<g id="edge2" class="edge">
+<title>Subject-&gt;Session</title>
+<path fill="none" stroke="#000000" stroke-width="0.75" stroke-opacity="0.250980" d="M93.5,-132.8C93.5,-121.95 93.5,-107.87 93.5,-97.05"/>
+</g>
+<!-- Session&#45;&gt;Analysis -->
+<g id="edge3" class="edge">
+<title>Session-&gt;Analysis</title>
+<path fill="none" stroke="#000000" stroke-width="0.75" stroke-opacity="0.250980" d="M84.23,-61.89C77.73,-50.24 69.23,-35.01 63.57,-24.88"/>
+</g>
+</g>
+</svg>
