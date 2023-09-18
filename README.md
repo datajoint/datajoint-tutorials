@@ -6,6 +6,7 @@ This document will guide you as a new DataJoint user through interactive tutoria
 
 *Please note that these hands-on DataJoint tutorials are friendly to non-expert users, and advanced programming skills are not required.* 
 
+
 ## Table of contents 
 - In the [tutorials](./tutorials) folder are interactive Jupyter notebooks to learn DataJoint. The calcium imaging and electrophysiology tutorials provide examples of defining and interacting with data pipelines. In addition, some fill-in-the-blank sections are included for you to code yourself!
     - 01-DataJoint Basics
@@ -19,6 +20,7 @@ This document will guide you as a new DataJoint user through interactive tutoria
 - You will find the following notebooks in the [short_tutorials](./short_tutorials) folder:
     - DataJoint in 30min
     - University
+
 
 ## Key learnings from the tutorials
 
@@ -45,6 +47,7 @@ Here is a summary of the content that you can expect to have learned:
     - `.populate()` for automated computation
     - `.populate(reserve_jobs=True)` for parallelization
     
+
 ## Interactive Environment
 
 - These interactive DataJoint tutorials can be accessed through a cloud-based environment on [GitHub Codespaces](https://github.com/features/codespaces).  The following instructions will provide you with an environment that is configured with DataJoint for Python so that you can immediately begin to build and run a data pipeline.
@@ -60,7 +63,27 @@ Here is a summary of the content that you can expect to have learned:
 - *Tip*: GitHub auto names the Codespaces, but you can rename the Codespace so that it is easier to identify later.
 - *Tip*: All the edits you make in these tutorial notebooks are ***not persistent***.  Edits will be reset to the original content every time you restart the server.  However, you can easily commit the changes to your fork.
 
-## Developer Instructions
+
+## Documentation
+
+- For more information on DataJoint Python, please refer to the [documentation](https://datajoint.com/docs/core/datajoint-python/).
+
+
+## Support
+If you need help getting started or run into any errors, please open a GitHub Issue or contact our team by email at support@datajoint.com.
+
+
+## Additional DataJoint Tutorials
+
+- DataJoint Elements is a collection of curated modules for assembling data pipelines for several modalities of neurophysiology experiments.
+  - [Element Calcium Imaging Tutorial](https://github.com/datajoint/element-calcium-imaging#interactive-tutorial)
+  - [Element Array Electrophysiology Tutorial](https://github.com/datajoint/workflow-array-ephys#interactive-tutorial)
+
+- [Machine Intelligence from Cortical Networks (MICrONS) program](https://www.microns-explorer.org/)
+  - [MICrONS Tutorial](https://github.com/datajoint/microns_phase3_nda#interactive-environment)
+
+
+  ## Developer Instructions
 - **Local environment**:
    - Install the following:
     - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -75,20 +98,3 @@ Here is a summary of the content that you can expect to have learned:
     - Use the `Dev Containers extension` to `Reopen in Container`. (More info in the `Getting started` included with the extension.)
     - To begin, navigate to the [tutorials](./tutorials) directory located in the left panel and proceed through the sequentially organized Jupyter notebooks. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
     - Once you are done, you can stop the container by closing the `VS Code` window.
-
-## Documentation
-
-- For more information on DataJoint Python, please refer to the [documentation](https://datajoint.com/docs/core/datajoint-python/).
-
-
-## Support
-If you need help getting started or run into any errors, please open a GitHub Issue or contact our team by email at support@datajoint.com.
-
-## Additional DataJoint Tutorials
-
-- DataJoint Elements is a collection of curated modules for assembling data pipelines for several modalities of neurophysiology experiments.
-  - [Element Calcium Imaging Tutorial](https://github.com/datajoint/element-calcium-imaging#interactive-tutorial)
-  - [Element Array Electrophysiology Tutorial](https://github.com/datajoint/workflow-array-ephys#interactive-tutorial)
-
-- [Machine Intelligence from Cortical Networks (MICrONS) program](https://www.microns-explorer.org/)
-  - [MICrONS Tutorial](https://github.com/datajoint/microns_phase3_nda#interactive-environment)
