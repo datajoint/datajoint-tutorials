@@ -79,7 +79,7 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
     - VSCode [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
     - `git clone` your fork of the repository and open it in VSCode.
     - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
-    - Once you are done, see the options in the menu in the bottom-left corner. When running DevContainer on your machine, you can `Reopen folder locally`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
+    - Once you are done, you can stop the container by closing the `VS Code` window.
 
 ## Documentation
 
