@@ -67,7 +67,7 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
       - Once you are done, see the options in the menu in the bottom-left corner. In Codespaces, you can `Stop Current Codespace`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
 
 - **Local environment**:
-   - We highly recommend this option for users that who want to apply DataJoint to **their own neuroscience experiments** and lab research after exploring the tutorials. Additionally, this option is particularly advantageous for those who have a keen interest in **other modules of the DataJoint Elements Library** (e.g., Miniscope, DeepLabCut). For this option, ensure you have the following:
+   - Install the following:
     - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     - [Docker](https://docs.docker.com/get-docker/)
       - On M1/M2 Mac, you have to:
