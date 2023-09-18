@@ -45,26 +45,20 @@ Here is a summary of the content that you can expect to have learned:
     - `.populate()` for automated computation
     - `.populate(reserve_jobs=True)` for parallelization
     
+## Interactive Environment
 
-## Quick start
-
-### User installation 
-DataJoint tutorials are easily accessible using an **interactive environment** that contains all the software required to run the experiments. The setting is configured by [DevContainer] (https://containers.dev/). Here are two options to launch the interactive environment. 
-
-*Please note that to use the DataJoint Python package with an interactive environment, you need a [GitHub](https://github.com/) account.*
-
-- **Cloud-based environment: GitHub Codespaces**: (*recommended*) 
-   - This is the easiest option for **tutorial users**. You will immediately start coding using DataJoint and Python, without installing software or local environments. Cloud-based environments (IDEs), such as [GitHub Codespaces](https://github.com/features/codespaces), use built-in tools directly connected to the cloud and work on the browser.
-   
-   - Instructions:
-      - Fork the [datajoint-tutorials](https://github.com/datajoint/datajoint-tutorials) repository into your repository.
-      - From your `datajoint-tutorials` repository, click on `Code`, then click on `Codespaces` tab, and `+` option will `Create codespace on main` on your fork with default options. For more control, see the `...` where you may create `New with options...`.
-      - The building time for Codespaces is **~5m**. This is done infrequently and cached for convenience.
-      - The start time for Codespaces is **~30s**. This will pull the built codespace from the cache when you need it.
-      - *Tip*: Each month, GitHub renews a [free-tier](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) quota of computing and storage. Typically we run into the storage limits before anything else since Codespaces consume storage while stopped. It is best to delete Codespaces when not actively in use and recreate them when needed. We'll soon be creating prebuilds to avoid larger build times. Once any portion of your quota is reached, you will need to wait for it to be reset at the end of your cycle or add billing info to your GitHub account to handle overages.
-      - *Tip*: GitHub auto names the Codespaces, but you can rename the Codespaces so that it is easier to identify later.
-      - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
-      - Once you are done, see the options in the menu in the bottom-left corner. In Codespaces, you can `Stop Current Codespace`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
+- These interactive DataJoint tutorials can be accessed through a cloud-based environment on [GitHub Codespaces](https://github.com/features/codespaces).  The following instructions will provide you with an environment that is configured with DataJoint for Python so that you can immediately begin to build and run a data pipeline.
+- Instructions
+  - Sign up for a free a [GitHub](https://github.com/) account.
+  - Fork this repository.
+  - Launch the environment using GitHub Codespaces on your fork with the default options by selecting the green `Code` button, then the `Codespaces` tab, and then the green `Create codespace on main` button. For more control, under the `Codespaces` tab select the `...` button where you may create `New with options....`.
+  - The launch time for the Codespace is less that 2 minutes.
+  - You will know your environment has finished loading once the `pip install -e .` command has run and the terminal prompt is clear.
+  - To begin, navigate to the `tutorials` directory located in the left panel and proceed through the sequentially organized Jupyter notebooks. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
+  - Once you are done, see the options in the menu in the bottom-left corner. In Codespaces, you can `Stop Current Codespace`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
+- *Tip*: Each month, GitHub renews a [free-tier](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) quota of computing and storage. Typically we run into the storage limits before anything else since Codespaces consume storage while stopped. It is best to delete [Codespaces](https://github.com/codespaces) when not actively in use and recreate them when needed. Once any portion of your quota is reached, you will need to wait for it to be reset at the end of your cycle or add billing info to your GitHub account to handle overages.
+- *Tip*: GitHub auto names the Codespaces, but you can rename the Codespace so that it is easier to identify later.
+- *Tip*: All the edits you make in these tutorial notebooks are ***not persistent***.  Edits will be reset to the original content every time you restart the server.  However, you can easily commit the changes to your fork.
 
 ## Developer Instructions
 - **Local environment**:
