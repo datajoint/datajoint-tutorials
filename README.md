@@ -66,6 +66,7 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
       - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
       - Once you are done, see the options in the menu in the bottom-left corner. In Codespaces, you can `Stop Current Codespace`. By default, GitHub will also automatically stop the Codespaces after 30 minutes of inactivity.
 
+## Developer Instructions
 - **Local environment**:
    - Install the following:
     - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
