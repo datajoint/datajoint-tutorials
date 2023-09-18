@@ -71,9 +71,9 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
    - Install the following:
     - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     - [Docker](https://docs.docker.com/get-docker/)
-      - On M1/M2 Mac, you have to:
-        - enable Rosetta 2 on Docker advanced/experimental settings
-        - ensure Rosetta is installed by typing `softwareupdate --install-rosetta` at a shell prompt
+      - On M1/M2 Mac:
+        - Enable Rosetta 2 on Docker advanced/experimental settings
+        - Ensure Rosetta is installed by typing `softwareupdate --install-rosetta` at a shell prompt
         - `export DOCKER_DEFAULT_PLATFORM=linux/amd64` in .zshrc or at a shell prompt
     - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
     - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
