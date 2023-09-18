@@ -78,7 +78,8 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
     - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
     - VSCode [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
     - `git clone` your fork of the repository and open it in VSCode.
-    - To begin, navigate to the notebooks directory located in the left panel and proceed through the sequentially organized Jupyter notebooks, labeled by numbers. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
+    - Use the `Dev Containers extension` to `Reopen in Container`. (More info in the `Getting started` included with the extension.)
+    - To begin, navigate to the [tutorials](./tutorials) directory located in the left panel and proceed through the sequentially organized Jupyter notebooks. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
     - Once you are done, you can stop the container by closing the `VS Code` window.
 
 ## Documentation
