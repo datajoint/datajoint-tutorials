@@ -84,7 +84,6 @@ DataJoint tutorials are easily accessible using an **interactive environment** t
 
 - For more information on DataJoint Python, please refer to the [documentation](https://datajoint.com/docs/core/datajoint-python/).
 
-Before we start, remember that all the edits you make in these tutorial notebooks are ***not persistent*** - they will be reset to the original content every time you restart the server. However, you can easily download the notebooks that interest you in keeping the changes.
 
 ## Support
 If you need help getting started or run into any errors, please open a GitHub Issue or contact our team by email at support@datajoint.com.
