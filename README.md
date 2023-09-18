@@ -7,7 +7,7 @@ This document will guide you as a new DataJoint user through interactive tutoria
 *Please note that these hands-on DataJoint tutorials are friendly to non-expert users, and advanced programming skills are not required.* 
 
 ## Table of contents 
-- In the `tutorials` folder are interactive Jupyter notebooks to learn DataJoint. The Calcium Imaging and Electrophysiology tutorials are relevant examples of data structure and analysis. In addition, some fill-in-the-blank sections are included for you to code yourself!
+- In the [tutorials](./tutorials) folder are interactive Jupyter notebooks to learn DataJoint. The calcium imaging and electrophysiology tutorials provide examples of defining and interacting with data pipelines. In addition, some fill-in-the-blank sections are included for you to code yourself!
     - 01-DataJoint Basics
     - 02-Calcium Imaging Imported Tables
     - 03-Calcium Imaging Computed Tables
