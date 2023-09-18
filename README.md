@@ -84,16 +84,16 @@ If you need help getting started or run into any errors, please open a GitHub Is
 
 
 ## Developer Instructions
-- **Local environment**:
-   - Install the following:
-    - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-    - [Docker](https://docs.docker.com/get-docker/)
-      - On M1/M2 Mac:
-        - Enable Rosetta 2 on Docker advanced/experimental settings
-        - Ensure Rosetta is installed by typing `softwareupdate --install-rosetta` at a shell prompt
-        - `export DOCKER_DEFAULT_PLATFORM=linux/amd64` in .zshrc or at a shell prompt
-    - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
-    - VSCode [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+- Local environment instructions
+    - Install the following:
+        - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+        - [Docker](https://docs.docker.com/get-docker/)
+            - On M1/M2 Mac:
+                - Enable Rosetta 2 on Docker advanced/experimental settings
+                - Ensure Rosetta is installed by typing `softwareupdate --install-rosetta` at a shell prompt
+                - `export DOCKER_DEFAULT_PLATFORM=linux/amd64` in .zshrc or at a shell prompt
+        - [Microsoft's Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+        - VSCode [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
     - `git clone` your fork of the repository and open it in VSCode.
     - Use the `Dev Containers extension` to `Reopen in Container`. (More info in the `Getting started` included with the extension.)
     - To begin, navigate to the [tutorials](./tutorials) directory located in the left panel and proceed through the sequentially organized Jupyter notebooks. Execute the cells in the notebooks to begin your walkthrough of the tutorial.
