@@ -14,7 +14,7 @@ This document will guide you as a new DataJoint user through interactive tutoria
     - 04-Electrophysiology Imported Tables
     - 05-Electrophysiology Computed Tables
 
-- In the `completed_tutorials` folder are Jupyter notebooks with the code sections completed and solved.
+- In the [completed_tutorials](./completed_tutorials) folder are Jupyter notebooks with the code sections completed and solved.
 
 - You will find the following notebooks in the [short_tutorials](./short_tutorials) folder:
     - DataJoint in 30min
