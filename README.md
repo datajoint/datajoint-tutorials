@@ -83,7 +83,7 @@ If you need help getting started or run into any errors, please open a GitHub Is
   - [MICrONS Tutorial](https://github.com/datajoint/microns_phase3_nda#interactive-environment)
 
 
-  ## Developer Instructions
+## Developer Instructions
 - **Local environment**:
    - Install the following:
     - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
