@@ -1,0 +1,172 @@
+<svg height="444pt" viewBox="0.00 0.00 313.07 444.50" width="313pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 440.499)">
+<title>%3</title>
+<polygon fill="#ffffff" points="-4,4 -4,-440.499 309.0708,-440.499 309.0708,4 -4,4" stroke="transparent"/>
+<!-- Fluorescence.Trace -->
+<g class="node" id="node1">
+<title>Fluorescence.Trace</title>
+<g id="a_node1"><a xlink:title="→ Fluorescence
+→ Segmentation.Roi
+------------------------------
+trace                
+">
+<polygon fill="transparent" points="108.2604,-19.7551 4.2644,-19.7551 4.2644,.2561 108.2604,.2561 108.2604,-19.7551" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="middle" x="56.2624" y="-7.499">Fluorescence.Trace</text>
+</a>
+</g>
+</g>
+<!-- Fluorescence -->
+<g class="node" id="node2">
+<title>Fluorescence</title>
+<g id="a_node2"><a xlink:title="→ Segmentation
+------------------------------
+time                 
+">
+<ellipse cx="56.2624" cy="-72.999" fill="#00007f" fill-opacity="0.250980" rx="56.0258" ry="17.5" stroke="#00007f" stroke-opacity="0.250980"/>
+<text fill="#00007f" font-family="arial" font-size="12.00" text-anchor="middle" x="56.2624" y="-70.2984">Fluorescence</text>
+</a>
+</g>
+</g>
+<!-- Fluorescence&#45;&gt;Fluorescence.Trace -->
+<g class="edge" id="edge1">
+<title>Fluorescence-&gt;Fluorescence.Trace</title>
+<path d="M56.2624,-55.3805C56.2624,-43.8298 56.2624,-29.1552 56.2624,-19.6127" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- Mouse -->
+<g class="node" id="node3">
+<title>Mouse</title>
+<g id="a_node3"><a xlink:title="mouse_id             
+------------------------------
+dob=null             
+sex=&quot;unknown&quot;        
+">
+<polygon fill="#00ff00" fill-opacity="0.188235" points="270.28,-436.499 218.2448,-436.499 218.2448,-401.499 270.28,-401.499 270.28,-436.499" stroke="#00ff00" stroke-opacity="0.188235"/>
+<text fill="#006400" font-family="arial" font-size="12.00" text-anchor="start" text-decoration="underline" x="226.2536" y="-417.2984">Mouse</text>
+</a>
+</g>
+</g>
+<!-- Session -->
+<g class="node" id="node4">
+<title>Session</title>
+<g id="a_node4"><a xlink:title="→ Mouse
+session_date         
+------------------------------
+experiment_setup     
+experimenter         
+data_path=&quot;&quot;         
+">
+<polygon fill="#00ff00" fill-opacity="0.188235" points="273.4546,-365.499 215.0702,-365.499 215.0702,-330.499 273.4546,-330.499 273.4546,-365.499" stroke="#00ff00" stroke-opacity="0.188235"/>
+<text fill="#006400" font-family="arial" font-size="12.00" text-anchor="start" text-decoration="underline" x="222.9167" y="-346.2984">Session</text>
+</a>
+</g>
+</g>
+<!-- Mouse&#45;&gt;Session -->
+<g class="edge" id="edge2">
+<title>Mouse-&gt;Session</title>
+<path d="M244.2624,-401.4485C244.2624,-390.6074 244.2624,-376.7356 244.2624,-365.8408" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- Scan -->
+<g class="node" id="node9">
+<title>Scan</title>
+<g id="a_node9"><a xlink:title="→ Session
+scan_idx             
+------------------------------
+depth                
+wavelength           
+laser_power          
+fps                  
+file_name            
+">
+<polygon fill="#00ff00" fill-opacity="0.188235" points="266.1154,-294.499 222.4094,-294.499 222.4094,-259.499 266.1154,-259.499 266.1154,-294.499" stroke="#00ff00" stroke-opacity="0.188235"/>
+<text fill="#006400" font-family="arial" font-size="12.00" text-anchor="start" text-decoration="underline" x="230.5866" y="-275.2984">Scan</text>
+</a>
+</g>
+</g>
+<!-- Session&#45;&gt;Scan -->
+<g class="edge" id="edge3">
+<title>Session-&gt;Scan</title>
+<path d="M244.2624,-330.4485C244.2624,-319.6074 244.2624,-305.7356 244.2624,-294.8408" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- Segmentation -->
+<g class="node" id="node5">
+<title>Segmentation</title>
+<g id="a_node5"><a xlink:title="→ AverageFrame
+→ SegmentationParam
+------------------------------
+segmented_masks      
+">
+<ellipse cx="178.2624" cy="-139.499" fill="#ff0000" fill-opacity="0.125490" rx="13.0073" ry="13" stroke="#ff0000" stroke-opacity="0.125490"/>
+<text fill="#7f0000" font-family="arial" font-size="12.00" text-anchor="middle" x="178.2624" y="-136.7984">Segmentation</text>
+</a>
+</g>
+</g>
+<!-- Segmentation&#45;&gt;Fluorescence -->
+<g class="edge" id="edge4">
+<title>Segmentation-&gt;Fluorescence</title>
+<path d="M166.5645,-133.1227C147.8376,-122.915 110.5943,-102.6143 84.5895,-88.4396" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width="2"/>
+</g>
+<!-- Segmentation.Roi -->
+<g class="node" id="node7">
+<title>Segmentation.Roi</title>
+<g id="a_node7"><a xlink:title="→ Segmentation
+roi_idx              
+------------------------------
+mask                 
+">
+<polygon fill="transparent" points="226.2559,-83.0046 130.2689,-83.0046 130.2689,-62.9934 226.2559,-62.9934 226.2559,-83.0046" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="start" text-decoration="underline" x="138.5163" y="-71.7485">Segmentation.Roi</text>
+</a>
+</g>
+</g>
+<!-- Segmentation&#45;&gt;Segmentation.Roi -->
+<g class="edge" id="edge5">
+<title>Segmentation-&gt;Segmentation.Roi</title>
+<path d="M178.2624,-126.3608C178.2624,-113.6426 178.2624,-94.636 178.2624,-83.0718" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- SegmentationParam -->
+<g class="node" id="node6">
+<title>SegmentationParam</title>
+<g id="a_node6"><a xlink:title="seg_param_id         
+------------------------------
+threshold            
+size_cutoff          
+">
+<polygon fill="#000000" fill-opacity="0.125490" points="165.9246,-223.499 58.6002,-223.499 58.6002,-188.499 165.9246,-188.499 165.9246,-223.499" stroke="transparent"/>
+<text fill="#000000" font-family="arial" font-size="10.00" text-anchor="start" text-decoration="underline" x="66.6813" y="-204.7485">SegmentationParam</text>
+</a>
+</g>
+</g>
+<!-- SegmentationParam&#45;&gt;Segmentation -->
+<g class="edge" id="edge6">
+<title>SegmentationParam-&gt;Segmentation</title>
+<path d="M129.9492,-188.1782C142.4734,-175.5591 158.7787,-159.1303 168.8807,-148.9518" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- Segmentation.Roi&#45;&gt;Fluorescence.Trace -->
+<g class="edge" id="edge7">
+<title>Segmentation.Roi-&gt;Fluorescence.Trace</title>
+<path d="M159.1999,-63.1163C136.2802,-51.2338 98.0509,-31.4143 75.191,-19.5629" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width="2"/>
+</g>
+<!-- AverageFrame -->
+<g class="node" id="node8">
+<title>AverageFrame</title>
+<g id="a_node8"><a xlink:title="→ Scan
+------------------------------
+average_frame        
+">
+<ellipse cx="244.2624" cy="-205.999" fill="#00007f" fill-opacity="0.250980" rx="60.6175" ry="17.5" stroke="#00007f" stroke-opacity="0.250980"/>
+<text fill="#00007f" font-family="arial" font-size="12.00" text-anchor="middle" x="244.2624" y="-203.2984">AverageFrame</text>
+</a>
+</g>
+</g>
+<!-- AverageFrame&#45;&gt;Segmentation -->
+<g class="edge" id="edge8">
+<title>AverageFrame-&gt;Segmentation</title>
+<path d="M227.2658,-188.8736C214.5854,-176.0971 197.7453,-159.1296 187.472,-148.7784" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width=".75"/>
+</g>
+<!-- Scan&#45;&gt;AverageFrame -->
+<g class="edge" id="edge9">
+<title>Scan-&gt;AverageFrame</title>
+<path d="M244.2624,-259.4485C244.2624,-248.6074 244.2624,-234.7356 244.2624,-223.8408" fill="none" stroke="#000000" stroke-opacity="0.250980" stroke-width="2"/>
+</g>
+</g>
+</svg>

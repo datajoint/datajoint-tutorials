@@ -19,14 +19,16 @@ RUN \
 RUN \
     # dev setup
     apt update && \
-    apt-get install sudo git bash-completion graphviz default-mysql-client -y && \
+    apt-get install sudo git gcc bash-completion graphviz default-mysql-client -y && \
     usermod -aG sudo vscode && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
     pip install --no-cache-dir --upgrade black pip && \
     echo '. /etc/bash_completion' >> /home/vscode/.bashrc && \
     echo 'export PS1="\[\e[32;1m\]\u\[\e[m\]@\[\e[34;1m\]\H\[\e[m\]:\[\e[33;1m\]\w\[\e[m\]$ "' >> /home/vscode/.bashrc && \
     apt-get clean
+
 COPY ./requirements.txt /tmp/
+
 RUN \
     # tutorial dependencies
     pip install --no-cache-dir black faker ipykernel && \
