@@ -1,21 +1,24 @@
 # Welcome to DataJoint tutorials!
 
-DataJoint is an open-source library for science labs to design and build data pipelines for automated data analysis and sharing.
+DataJoint is an open-source library for scientific research labs to design and build
+data pipelines for automated data analysis and sharing.
 
-This document will guide you as a new DataJoint user through interactive tutorials organized in [Jupyter notebooks](https://jupyter-notebook.readthedocs.io/en/stable/) and written in [Python](https://www.python.org/).
+This document will guide you through interactive tutorials written in
+[Python](https://www.python.org/) and organized in [Jupyter
+notebooks](https://jupyter-notebook.readthedocs.io/en/stable/).
 
 *Please note that these hands-on DataJoint tutorials are friendly to non-expert users, and advanced programming skills are not required.* 
 
 
 ## Table of contents 
-- In the [tutorials](./tutorials) folder are interactive Jupyter notebooks to learn DataJoint. The calcium imaging and electrophysiology tutorials provide examples of defining and interacting with data pipelines. In addition, some fill-in-the-blank sections are included for you to code yourself!
+- The [tutorials](./tutorials) folder contains interactive Jupyter notebooks designed to teach DataJoint. The calcium imaging and electrophysiology tutorials provide examples of defining and interacting with data pipelines. In addition, some fill-in-the-blank sections are included for you to code yourself!
     - 01-DataJoint Basics
     - 02-Calcium Imaging Imported Tables
     - 03-Calcium Imaging Computed Tables
     - 04-Electrophysiology Imported Tables
     - 05-Electrophysiology Computed Tables
 
-- In the [completed_tutorials](./completed_tutorials) folder are Jupyter notebooks with the code sections completed and solved.
+- The [completed_tutorials](./completed_tutorials) folder contains Jupyter notebooks with all code sections completed and solved.
 
 - You will find the following notebooks in the [short_tutorials](./short_tutorials) folder:
     - DataJoint in 30min
