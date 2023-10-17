@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4 - 2023-10-11
+
++ Update - Markdown explanations within notebooks `01` and `02`
+
 ## 0.1.3 - 2023-09-14
 
 + Add - GitHub Actions to build Docker image and push to DockerHub
