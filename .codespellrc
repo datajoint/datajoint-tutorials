@@ -1,5 +1,5 @@
 [codespell]
-skip = .git,*.pdf,*.svg, db_course/*.ipynb
+skip = .git, *.pdf, *.svg
 ignore-regex = ^\s*"image/\S+": ".*
 
 #
