@@ -20,5 +20,3 @@ jobs:
 
       - name: Codespell
         uses: codespell-project/actions-codespell@v2
-        with:
-          args: "-c .codespellrc ."

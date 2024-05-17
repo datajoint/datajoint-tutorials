@@ -1,6 +1,6 @@
 [codespell]
-skip = .git, *.pdf, *.svg, *.ipynb
-ignore-regex = ^\s*"image/\S+": ".*
+skip=.git,*.pdf,*.svg,*.ipynb
+ignore-regex=^\s*"image/\S+": ".*
 
 #
-ignore-words-list = shepard, nevers, nin, DaSy, Fo, Alle, ND
+ignore-words-list=shepard,nevers,nin,DaSy,Fo,Alle,ND
