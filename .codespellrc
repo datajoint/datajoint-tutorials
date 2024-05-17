@@ -3,4 +3,4 @@ skip = .git, *.pdf, *.svg
 ignore-regex = ^\s*"image/\S+": ".*
 
 #
-ignore-words-list = shepard,nevers,nin,DaSy
+ignore-words-list = shepard, nevers, nin, DaSy, Fo, Alle, ND
