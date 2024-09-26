@@ -1,13 +1,11 @@
 # MYSQL_VER=8.0 docker compose up --build
-version: "2.4"
 services:
   db:
     restart: always
-    image: datajoint/mysql:${MYSQL_VER}
+    image: datajoint/mysql:${MYSQL_VER:-8.0}
     environment:
-      - MYSQL_ROOT_PASSWORD=${DJ_PASS}
-    ports:
-      - "3306:3306"
+      - MYSQL_ROOT_PASSWORD=${DJ_PASS:-simple}
+    command: mysqld --default-authentication-plugin=mysql_native_password
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
       timeout: 15s

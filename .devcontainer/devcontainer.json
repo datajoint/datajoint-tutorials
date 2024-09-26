@@ -1,29 +1,41 @@
 {
 	"name": "DataJoint Tutorial",
-	"dockerComposeFile": "docker-compose.yaml",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.yaml"
+	],
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"remoteEnv": {
 		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
 	},
-	"onCreateCommand": "pip install -e . && MYSQL_VER=8.0 docker compose down && MYSQL_VER=8.0 docker compose up --build --wait",
-	"postStartCommand": "docker volume prune -f",
+	"onCreateCommand": "pip install -q -e .",
+	"shutdownAction": "stopCompose",
 	"hostRequirements": {
 		"cpus": 2,
 		"memory": "4gb",
 		"storage": "32gb"
 	},
 	"forwardPorts": [
-		3306
+		80,
+		443,
+		3306,
+		8080,
+		9000
 	],
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
 	"customizations": {
 		"settings": {
 			"python.pythonPath": "/usr/local/bin/python"
 		},
 		"vscode": {
 			"extensions": [
-				"ms-python.python@2023.8.0",
-				"ms-toolsai.jupyter@2023.3.1201040234"
+				"ms-python.python",
+				"ms-toolsai.jupyter"
 			]
 		}
 	}
