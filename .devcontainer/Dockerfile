@@ -32,7 +32,7 @@ COPY ./requirements.txt /tmp/
 RUN \
     # tutorial dependencies
     pip install --no-cache-dir black faker ipykernel && \
-    pip install --no-cache-dir -r /tmp/requirements.txt && \
+    pip install --no-cache-dir -r /tmp/requirements.txt --upgrade && \
     rm /tmp/requirements.txt
 
 ENV DJ_HOST fakeservices.datajoint.io
