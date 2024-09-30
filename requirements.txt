@@ -3,3 +3,4 @@ seaborn
 scikit-image
 ipython-sql
 sqlalchemy
+PyWavelets
