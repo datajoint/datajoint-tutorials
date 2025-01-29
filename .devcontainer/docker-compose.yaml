@@ -7,7 +7,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
       args:
         - PY_VER=${PY_VER:-3.11}
-        - DISTRO=${DISTRO:-buster}
+        - DISTRO=${DISTRO:-bullseye}
     image: datajoint/datajoint_tutorials:latest
     volumes:
       - ..:/workspaces:cached
